@@ -1,2 +1,3 @@
-<app-slider></app-slider>
+<!-- In slider passaggio dati. data a sinistra è in slider ed è array vuoto. a destra è quello che c'è in app component-->
+<app-slider [data]="data" (sendData)="onReceive($event)"></app-slider>
 <app-card></app-card>

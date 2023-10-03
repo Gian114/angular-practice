@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'practice-project';
+
+  data = [ "ciao", "come", "stai"];
+
+  onReceive(data: string) {
+    console.log(data);
+  }
+  
 }
