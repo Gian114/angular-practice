@@ -10,6 +10,8 @@ export class AppComponent {
 
   data = [ "ciao", "come", "stai"];
 
+  colore = "purple"
+
   onReceive(data: string) {
     console.log(data);
   }

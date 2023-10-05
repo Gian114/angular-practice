@@ -12,6 +12,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { CardComponent } from './card/card.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
+import { HighlightDirective } from './direttive/highlight.directive';
 
 //In angular esistono diverse direttive da usare anche in html, cercale su Internet nel caso ti servano vedi ngIf, ngFor, ngSwitch, ngClass, ngStyle, ecc.
 
@@ -20,7 +21,8 @@ import {MatInputModule} from '@angular/material/input';
   declarations: [
     AppComponent,
     SliderComponent,
-    CardComponent
+    CardComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

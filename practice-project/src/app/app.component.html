@@ -1,3 +1,7 @@
 <!-- In slider passaggio dati. data a sinistra è in slider ed è array vuoto. a destra è quello che c'è in app component-->
 <app-slider [data]="data" (sendData)="onReceive($event)"></app-slider>
 <app-card></app-card>
+<!--passo dati a direttiva, posso passare colore a file ts e cambiare effettivamente il colore
+La prima propietà ha il nome del selettore, la seconda può avere il nome che voglio
+-->
+<p [appHighlight]="colore" defaultColor="black">Sto inserendo direttiva</p>
