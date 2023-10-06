@@ -14,6 +14,10 @@ export class SliderComponent {
   @Output() sendData = new EventEmitter<string>(); //con output si specifica che il dato uscirà da questo componente
   figlio = 'ciao';
 
+  provaPipe = "Pipe";
+  today = Date.now(); //per date puoi vedere in documentazione come formattarle
+  number = 5.6789; //anche qui hai opzioni diverse pioi vederle in doc
+
   sendDataFunction() {
     this.sendData.emit(this.figlio); 
   }

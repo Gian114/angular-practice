@@ -2,3 +2,12 @@
 <div *ngFor="let parola of data">
     <p>{{parola}}</p>
 </div>
+
+<!--Pipe. ne esistono di default, si possono costruire-->
+<p>Proverò le diverse funzioni pipe uppercase: {{provaPipe | uppercase}}</p>
+<p>Proverò le diverse funzioni pipe date: {{today | date}}</p>
+<p>Proverò le diverse funzioni pipe date: {{today | date: 'short'}}</p>
+<p>Proverò le diverse funzioni pipe number: {{number | number}}</p>
+<p>Proverò le diverse funzioni pipe percent: {{number | percent}}</p>
+<p>Proverò le diverse funzioni pipe currency: {{number | currency:'EUR'}}</p>
+
