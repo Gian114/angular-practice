@@ -12,7 +12,6 @@ export class AppComponent {
 
   colore = "purple"
 
-  //routing
 
   onReceive(data: string) {
     console.log(data);

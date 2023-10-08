@@ -6,7 +6,15 @@ La prima propietà ha il nome del selettore, la seconda può avere il nome che v
 -->
 <p [appHighlight]="colore" defaultColor="black">Sto inserendo direttiva</p>
 
-<a routerLink="/">Home</a>
-<a routerLink="/about">About</a>
-<a routerLink="/contact">Contact</a>
+<app-home></app-home>
+<app-about></app-about>
+<app-contact></app-contact>
+
+<nav>
+    <ul>
+      <li><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">about</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page">contact</a></li>
+    </ul>
+  </nav>
+
 <router-outlet></router-outlet>
