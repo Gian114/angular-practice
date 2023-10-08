@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ProvaServizioService } from '../prova-servizio.service';
 
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css']
 })
-export class CardComponent {
+export class CardComponent implements OnInit {
   //String interpolation = {{}} --- se html 
   // you can put inside the {{}} any ts code
   subtitle = 'This is a card component';
@@ -34,5 +35,15 @@ export class CardComponent {
 
   //Two way binding = con ngModel --- con parentesi quadre e tonde in html [()]
   //si collega direttamente alla variabile, in questo caso title
+  constructor(private provaServizio: ProvaServizioService) { //servizio iniettato nel costruttore
+    
+   }
+
+   //dati passati da un punto all'altro senza problemi
+   ngOnInit(): void {
+    //puoi creare dei metodi nel servizio per per prenderli tipo getAll() e proteggere variabili con private nel servizi 
+    console.log(this.provaServizio.ikea, 'servizio iniettato');
+   }
+
 
 }

@@ -13,6 +13,10 @@ import { CardComponent } from './card/card.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import { HighlightDirective } from './direttive/highlight.directive';
+import { ProvaServizioService } from './prova-servizio.service';
+import { AboutComponent } from './componenti/about/about.component';
+import { ContactComponent } from './componenti/contact/contact.component';
+import { HomeComponent } from './componenti/home/home.component';
 
 //In angular esistono diverse direttive da usare anche in html, cercale su Internet nel caso ti servano vedi ngIf, ngFor, ngSwitch, ngClass, ngStyle, ecc.
 
@@ -22,7 +26,10 @@ import { HighlightDirective } from './direttive/highlight.directive';
     AppComponent,
     SliderComponent,
     CardComponent,
-    HighlightDirective
+    HighlightDirective,
+    AboutComponent,
+    ContactComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +41,7 @@ import { HighlightDirective } from './direttive/highlight.directive';
     MatCardModule,
     MatInputModule
   ],
-  providers: [],
+  providers: [ProvaServizioService], //puoi metterli anche qui i services che vuoi disponibili in root
   bootstrap: [AppComponent]
 })
 export class AppModule { }
